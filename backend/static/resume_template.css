@@ -1,0 +1,104 @@
+@page {
+  size: A4;
+  margin: 18mm 20mm 18mm 20mm;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Georgia", "Times New Roman", serif;
+  font-size: 10.5pt;
+  line-height: 1.5;
+  color: #1a1a1a;
+}
+
+h1 {
+  font-size: 22pt;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: #111;
+  margin-bottom: 2pt;
+}
+
+h2 {
+  font-size: 11pt;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #1a1a1a;
+  border-bottom: 1.5pt solid #1a1a1a;
+  margin-top: 14pt;
+  margin-bottom: 6pt;
+  padding-bottom: 2pt;
+}
+
+h3 {
+  font-size: 10.5pt;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-top: 6pt;
+  margin-bottom: 1pt;
+}
+
+p {
+  margin-bottom: 4pt;
+}
+
+ul, ol {
+  margin-left: 16pt;
+  margin-bottom: 4pt;
+}
+
+li {
+  margin-bottom: 2pt;
+}
+
+a {
+  color: #1a1a1a;
+  text-decoration: none;
+}
+
+strong {
+  font-weight: 700;
+}
+
+em {
+  font-style: italic;
+}
+
+/* Header contact line */
+p:first-of-type {
+  font-size: 9.5pt;
+  color: #444;
+}
+
+/* Date / location right-aligned pattern */
+.with-date {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+/* Avoid page breaks in the middle of experience entries */
+h3, h3 + p, h3 + ul {
+  page-break-inside: avoid;
+}
+
+/* Code blocks (skills section) */
+code {
+  font-family: "Courier New", monospace;
+  font-size: 9.5pt;
+  background: #f4f4f4;
+  padding: 1pt 3pt;
+  border-radius: 2pt;
+}
+
+hr {
+  border: none;
+  border-top: 0.5pt solid #ccc;
+  margin: 8pt 0;
+}
